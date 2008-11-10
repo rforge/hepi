@@ -1,0 +1,16 @@
+citHeader("To cite the hepi package in publications use:")
+
+citEntry(entry = "phdthesis",
+         title = "Hedonic Elementary Price Indices: Axiomatic Foundation and Estimation Techniques",
+         author = personList(person(first="Michael", last="Beer")),
+         school = "University of Fribourg Switzerland",
+         year = 2007,
+         url = "http://www.michael.beer.name/phdthesis.pdf",
+         isbn = "978-3-033-01099-4",
+
+         textVersion =
+         paste("Beer M. (2007)",
+               "Hedonic Elementary Price Indices: Axiomatic Foundation and Estimation Techniques.",
+               "PhD thesis. University of Fribourg Switzerland.",
+               "http://www.michael.beer.name/phdthesis/")
+)
