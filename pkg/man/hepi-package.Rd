@@ -14,10 +14,9 @@ Package: \tab hepi\cr
 Date: \tab 2008-11-10\cr
 Version: \tab 1.0-1\cr
 License: \tab GPL (version 2 or later) See file LICENCE.\cr
-Depends: \tab R (>= 2.2.0)\cr
+Depends: \tab R (>= 2.2.0), methods\cr
 Suggests: \tab MASS, spdep\cr
 LazyLoad: \tab yes\cr
-SaveImage: \tab yes\cr
 URL: \tab http://www.michael.beer.name/r-hepi\cr
 }
 
@@ -33,7 +32,7 @@ Index:
 }
 }
 \author{Michael Beer \email{r-hepi@michael.beer.name}}
-}
+
 \references{   
   Beer, M. (2007) \emph{Hedonic Elementary Price Indices: Axiomatic Foundation and Estimation Techniques.}
   PhD thesis, University of Fribourg Switzerland, \url{http://www.michael.beer.name/phdthesis}.

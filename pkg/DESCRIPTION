@@ -7,8 +7,7 @@ Description: This package provides a set of functions
  for estimating hedonic functions and hedonic elementary price indices.
 Maintainer: Michael Beer <r-hepi@michael.beer.name>
 License: GPL (version 2 or later) See file LICENCE.
-Depends: R (>= 2.2.0)
+Depends: R (>= 2.2.0), methods
 Suggests: MASS, spdep
 LazyLoad: yes
-SaveImage: yes
 URL: http://www.michael.beer.name/r-hepi
