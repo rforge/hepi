@@ -11,10 +11,11 @@ hedonic functions and hedonic elementary price indices.
 \details{
 \tabular{ll}{
 Package: \tab hepi\cr
-Date: \tab 2008-11-10\cr
-Version: \tab 1.0-1\cr
-License: \tab GPL (version 2 or later) See file LICENCE.\cr
+Date: \tab 2016-07-23\cr
+Version: \tab 1.0-2\cr
+License: \tab GPL-2\cr
 Depends: \tab R (>= 2.2.0), methods\cr
+Imports: \tab stats\cr
 Suggests: \tab MASS, spdep\cr
 LazyLoad: \tab yes\cr
 URL: \tab http://www.michael.beer.name/r-hepi\cr

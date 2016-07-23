@@ -1,3 +1,3 @@
 exportClasses("hedonic.function")
 exportPattern("^[^\\.]")
-importFrom(stats)
+import(stats, methods)

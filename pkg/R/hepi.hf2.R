@@ -6,7 +6,7 @@ build.hf.lm.split <- function(learndata, split.var, full.formula, min.formula,
     if(!is(full.formula, "formula"))
         stop("'full.formula' must be a proper formula object")
 
-    if(allow.variable.selection && !require("MASS"))
+    if(allow.variable.selection && !requireNamespace("MASS"))
         stop("the 'MASS' package is needed for variable selection")
         
     if(allow.variable.selection && !is(min.formula, "formula"))
@@ -77,7 +77,7 @@ build.hf.lm.split <- function(learndata, split.var, full.formula, min.formula,
                          stop("an object named 'datam' must not exist in '.GlobalEnv' since it would be overwritten")
 
                      assign("datam", datam, envir = .GlobalEnv)
-                     hf.model.n <- try(stepAIC(hf.model, scope = list(upper = full.formula.m, lower = min.formula), trace=0), silent=TRUE)
+                     hf.model.n <- try(MASS::stepAIC(hf.model, scope = list(upper = full.formula.m, lower = min.formula), trace=0), silent=TRUE)
                      remove("datam", envir = .GlobalEnv)
                      if(class(hf.model.n) != "try-error") {
                          hf.model <- hf.model.n

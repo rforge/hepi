@@ -1,5 +1,3 @@
-.onLoad <- function(lib, pkg) require(methods)
-
 .validHF <- function(object) {
     if(!is.element("data", names(formals(object@.Data))))
         return("The candidate hedonic function needs to have a formal argument named 'data'")

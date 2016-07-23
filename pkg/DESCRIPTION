@@ -1,13 +1,14 @@
 Package: hepi
+Version: 1.0-2
+Date: 2016-07-23
 Title: Functions for estimating hedonic elementary price indices
-Date: 2008-09-14
-Version: 1.0-1
-Author: Michael Beer <r-hepi@michael.beer.name>
+Authors@R: person("Michael", "Beer", role = c("aut", "cre"),
+		     email = "r-hepi@michael.beer.name")
 Description: This package provides a set of functions
  for estimating hedonic functions and hedonic elementary price indices.
-Maintainer: Michael Beer <r-hepi@michael.beer.name>
-License: GPL (version 2 or later) See file LICENCE.
+License: GPL-2
 Depends: R (>= 2.2.0), methods
+Imports: stats
 Suggests: MASS, spdep
 LazyLoad: yes
 URL: http://www.michael.beer.name/r-hepi

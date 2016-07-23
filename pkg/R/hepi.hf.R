@@ -6,7 +6,7 @@ build.hf.lm <- function(learndata, full.formula, min.formula,
     if(!is(full.formula, "formula"))
         stop("'full.formula' must be a proper formula object")
 
-    if(allow.variable.selection && !require("MASS"))
+    if(allow.variable.selection && !requireNamespace("MASS"))
         stop("the 'MASS' package is needed for variable selection")
         
     if(allow.variable.selection && !is(min.formula, "formula"))
@@ -33,7 +33,7 @@ build.hf.lm <- function(learndata, full.formula, min.formula,
             stop("an object named 'learndata.build.hf.lm' must not exist in '.GlobalEnv' since it would be overwritten")
     
         assign("learndata.build.hf.lm", learndata.build.hf.lm, envir = .GlobalEnv)
-        hf.model <- stepAIC(hf.model, scope = list(upper = full.formula, lower = min.formula))
+        hf.model <- MASS::stepAIC(hf.model, scope = list(upper = full.formula, lower = min.formula))
         remove("learndata.build.hf.lm", envir = .GlobalEnv)
     }
 
